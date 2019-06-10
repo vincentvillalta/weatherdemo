@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1144AED49295FC9D17A462D5 /* Pods_WheatherDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3449B6D77B5809BC67A071A0 /* Pods_WheatherDemoTests.framework */; };
+		C4DA686F22AEEC5D00AF8B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DA686E22AEEC5D00AF8B64 /* AppDelegate.swift */; };
+		C4DA687122AEEC5D00AF8B64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DA687022AEEC5D00AF8B64 /* ViewController.swift */; };
+		C4DA687422AEEC5D00AF8B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DA687222AEEC5D00AF8B64 /* Main.storyboard */; };
+		C4DA687622AEEC5F00AF8B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DA687522AEEC5F00AF8B64 /* Assets.xcassets */; };
+		C4DA687922AEEC5F00AF8B64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DA687722AEEC5F00AF8B64 /* LaunchScreen.storyboard */; };
+		C4DA688422AEEC6000AF8B64 /* WheatherDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DA688322AEEC6000AF8B64 /* WheatherDemoTests.swift */; };
+		FE2468543A11714F9BEF28A2 /* Pods_WheatherDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B791D14727C5FBC3B3A000C1 /* Pods_WheatherDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4DA688022AEEC5F00AF8B64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4DA686322AEEC5D00AF8B64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4DA686A22AEEC5D00AF8B64;
+			remoteInfo = WheatherDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3449B6D77B5809BC67A071A0 /* Pods_WheatherDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheatherDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		355058B50A705D6441F2047E /* Pods-WheatherDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WheatherDemo/Pods-WheatherDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6C7C1799710010470D186167 /* Pods-WheatherDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WheatherDemo/Pods-WheatherDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9381CAA7789FFD1941ACB439 /* Pods-WheatherDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WheatherDemoTests/Pods-WheatherDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		B791D14727C5FBC3B3A000C1 /* Pods_WheatherDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheatherDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DA686B22AEEC5D00AF8B64 /* WheatherDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheatherDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DA686E22AEEC5D00AF8B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4DA687022AEEC5D00AF8B64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4DA687322AEEC5D00AF8B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4DA687522AEEC5F00AF8B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4DA687822AEEC5F00AF8B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4DA687A22AEEC5F00AF8B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4DA687F22AEEC5F00AF8B64 /* WheatherDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheatherDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DA688322AEEC6000AF8B64 /* WheatherDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherDemoTests.swift; sourceTree = "<group>"; };
+		C4DA688522AEEC6000AF8B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F468A37FF840400B91EA35AF /* Pods-WheatherDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WheatherDemoTests/Pods-WheatherDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4DA686822AEEC5D00AF8B64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2468543A11714F9BEF28A2 /* Pods_WheatherDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DA687C22AEEC5F00AF8B64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1144AED49295FC9D17A462D5 /* Pods_WheatherDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F67DA4BE9EE708419FC1882 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B791D14727C5FBC3B3A000C1 /* Pods_WheatherDemo.framework */,
+				3449B6D77B5809BC67A071A0 /* Pods_WheatherDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2444F6BBE5235454774F214 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C7C1799710010470D186167 /* Pods-WheatherDemo.debug.xcconfig */,
+				355058B50A705D6441F2047E /* Pods-WheatherDemo.release.xcconfig */,
+				F468A37FF840400B91EA35AF /* Pods-WheatherDemoTests.debug.xcconfig */,
+				9381CAA7789FFD1941ACB439 /* Pods-WheatherDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C4DA686222AEEC5D00AF8B64 = {
+			isa = PBXGroup;
+			children = (
+				C4DA686D22AEEC5D00AF8B64 /* WheatherDemo */,
+				C4DA688222AEEC6000AF8B64 /* WheatherDemoTests */,
+				C4DA686C22AEEC5D00AF8B64 /* Products */,
+				A2444F6BBE5235454774F214 /* Pods */,
+				8F67DA4BE9EE708419FC1882 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4DA686C22AEEC5D00AF8B64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4DA686B22AEEC5D00AF8B64 /* WheatherDemo.app */,
+				C4DA687F22AEEC5F00AF8B64 /* WheatherDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4DA686D22AEEC5D00AF8B64 /* WheatherDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C4DA686E22AEEC5D00AF8B64 /* AppDelegate.swift */,
+				C4DA687022AEEC5D00AF8B64 /* ViewController.swift */,
+				C4DA687222AEEC5D00AF8B64 /* Main.storyboard */,
+				C4DA687522AEEC5F00AF8B64 /* Assets.xcassets */,
+				C4DA687722AEEC5F00AF8B64 /* LaunchScreen.storyboard */,
+				C4DA687A22AEEC5F00AF8B64 /* Info.plist */,
+			);
+			path = WheatherDemo;
+			sourceTree = "<group>";
+		};
+		C4DA688222AEEC6000AF8B64 /* WheatherDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4DA688322AEEC6000AF8B64 /* WheatherDemoTests.swift */,
+				C4DA688522AEEC6000AF8B64 /* Info.plist */,
+			);
+			path = WheatherDemoTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4DA686A22AEEC5D00AF8B64 /* WheatherDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4DA688822AEEC6000AF8B64 /* Build configuration list for PBXNativeTarget "WheatherDemo" */;
+			buildPhases = (
+				254D5D9D6AEFEE2EDE61C86B /* [CP] Check Pods Manifest.lock */,
+				C4DA686722AEEC5D00AF8B64 /* Sources */,
+				C4DA686822AEEC5D00AF8B64 /* Frameworks */,
+				C4DA686922AEEC5D00AF8B64 /* Resources */,
+				258552E8689EC4BA0EFE9DBB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WheatherDemo;
+			productName = WheatherDemo;
+			productReference = C4DA686B22AEEC5D00AF8B64 /* WheatherDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4DA687E22AEEC5F00AF8B64 /* WheatherDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4DA688B22AEEC6000AF8B64 /* Build configuration list for PBXNativeTarget "WheatherDemoTests" */;
+			buildPhases = (
+				808D422E38AC4FE7E9758D94 /* [CP] Check Pods Manifest.lock */,
+				C4DA687B22AEEC5F00AF8B64 /* Sources */,
+				C4DA687C22AEEC5F00AF8B64 /* Frameworks */,
+				C4DA687D22AEEC5F00AF8B64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4DA688122AEEC5F00AF8B64 /* PBXTargetDependency */,
+			);
+			name = WheatherDemoTests;
+			productName = WheatherDemoTests;
+			productReference = C4DA687F22AEEC5F00AF8B64 /* WheatherDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4DA686322AEEC5D00AF8B64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Vincent Villalta";
+				TargetAttributes = {
+					C4DA686A22AEEC5D00AF8B64 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					C4DA687E22AEEC5F00AF8B64 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = C4DA686A22AEEC5D00AF8B64;
+					};
+				};
+			};
+			buildConfigurationList = C4DA686622AEEC5D00AF8B64 /* Build configuration list for PBXProject "WheatherDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4DA686222AEEC5D00AF8B64;
+			productRefGroup = C4DA686C22AEEC5D00AF8B64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4DA686A22AEEC5D00AF8B64 /* WheatherDemo */,
+				C4DA687E22AEEC5F00AF8B64 /* WheatherDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4DA686922AEEC5D00AF8B64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DA687922AEEC5F00AF8B64 /* LaunchScreen.storyboard in Resources */,
+				C4DA687622AEEC5F00AF8B64 /* Assets.xcassets in Resources */,
+				C4DA687422AEEC5D00AF8B64 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DA687D22AEEC5F00AF8B64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		254D5D9D6AEFEE2EDE61C86B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WheatherDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		258552E8689EC4BA0EFE9DBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WheatherDemo/Pods-WheatherDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WheatherDemo/Pods-WheatherDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		808D422E38AC4FE7E9758D94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WheatherDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4DA686722AEEC5D00AF8B64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DA687122AEEC5D00AF8B64 /* ViewController.swift in Sources */,
+				C4DA686F22AEEC5D00AF8B64 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DA687B22AEEC5F00AF8B64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DA688422AEEC6000AF8B64 /* WheatherDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4DA688122AEEC5F00AF8B64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4DA686A22AEEC5D00AF8B64 /* WheatherDemo */;
+			targetProxy = C4DA688022AEEC5F00AF8B64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4DA687222AEEC5D00AF8B64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4DA687322AEEC5D00AF8B64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4DA687722AEEC5F00AF8B64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4DA687822AEEC5F00AF8B64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4DA688622AEEC6000AF8B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4DA688722AEEC6000AF8B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4DA688922AEEC6000AF8B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C7C1799710010470D186167 /* Pods-WheatherDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BCF6K6Y7WL;
+				INFOPLIST_FILE = WheatherDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.WheatherDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4DA688A22AEEC6000AF8B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 355058B50A705D6441F2047E /* Pods-WheatherDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BCF6K6Y7WL;
+				INFOPLIST_FILE = WheatherDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.WheatherDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4DA688C22AEEC6000AF8B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F468A37FF840400B91EA35AF /* Pods-WheatherDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BCF6K6Y7WL;
+				INFOPLIST_FILE = WheatherDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.WheatherDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WheatherDemo.app/WheatherDemo";
+			};
+			name = Debug;
+		};
+		C4DA688D22AEEC6000AF8B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9381CAA7789FFD1941ACB439 /* Pods-WheatherDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BCF6K6Y7WL;
+				INFOPLIST_FILE = WheatherDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.WheatherDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WheatherDemo.app/WheatherDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4DA686622AEEC5D00AF8B64 /* Build configuration list for PBXProject "WheatherDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DA688622AEEC6000AF8B64 /* Debug */,
+				C4DA688722AEEC6000AF8B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4DA688822AEEC6000AF8B64 /* Build configuration list for PBXNativeTarget "WheatherDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DA688922AEEC6000AF8B64 /* Debug */,
+				C4DA688A22AEEC6000AF8B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4DA688B22AEEC6000AF8B64 /* Build configuration list for PBXNativeTarget "WheatherDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DA688C22AEEC6000AF8B64 /* Debug */,
+				C4DA688D22AEEC6000AF8B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4DA686322AEEC5D00AF8B64 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_WheatherDemo {
+  umbrella header "Pods-WheatherDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
