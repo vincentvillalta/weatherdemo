@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1144AED49295FC9D17A462D5 /* Pods_WheatherDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3449B6D77B5809BC67A071A0 /* Pods_WheatherDemoTests.framework */; };
+		C4C0CC5622AEF01800311587 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0CC5522AEF01800311587 /* HomeViewController.swift */; };
+		C4C0CC5822AEF04100311587 /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0CC5722AEF04100311587 /* HomeProtocol.swift */; };
+		C4C0CC5B22AEF6E600311587 /* WeatherResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0CC5A22AEF6E600311587 /* WeatherResponseModel.swift */; };
+		C4C0CC6522AF517D00311587 /* WeatherListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0CC6422AF517C00311587 /* WeatherListTableViewCell.swift */; };
+		C4C0CC6922AF520500311587 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0CC6822AF520500311587 /* HomeViewPresenter.swift */; };
+		C4C0CC6B22AF528C00311587 /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0CC6A22AF528C00311587 /* HomeViewRouter.swift */; };
+		C4C0CC6D22AF52C200311587 /* HomeViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0CC6C22AF52C200311587 /* HomeViewInteractor.swift */; };
+		C4C0CC6F22AF531E00311587 /* HomeViewEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0CC6E22AF531E00311587 /* HomeViewEntity.swift */; };
 		C4DA686F22AEEC5D00AF8B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DA686E22AEEC5D00AF8B64 /* AppDelegate.swift */; };
-		C4DA687122AEEC5D00AF8B64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DA687022AEEC5D00AF8B64 /* ViewController.swift */; };
-		C4DA687422AEEC5D00AF8B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DA687222AEEC5D00AF8B64 /* Main.storyboard */; };
 		C4DA687622AEEC5F00AF8B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DA687522AEEC5F00AF8B64 /* Assets.xcassets */; };
 		C4DA687922AEEC5F00AF8B64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DA687722AEEC5F00AF8B64 /* LaunchScreen.storyboard */; };
 		C4DA688422AEEC6000AF8B64 /* WheatherDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DA688322AEEC6000AF8B64 /* WheatherDemoTests.swift */; };
@@ -33,10 +39,16 @@
 		6C7C1799710010470D186167 /* Pods-WheatherDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WheatherDemo/Pods-WheatherDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9381CAA7789FFD1941ACB439 /* Pods-WheatherDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WheatherDemoTests/Pods-WheatherDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		B791D14727C5FBC3B3A000C1 /* Pods_WheatherDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheatherDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C0CC5522AEF01800311587 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C4C0CC5722AEF04100311587 /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		C4C0CC5A22AEF6E600311587 /* WeatherResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseModel.swift; sourceTree = "<group>"; };
+		C4C0CC6422AF517C00311587 /* WeatherListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListTableViewCell.swift; sourceTree = "<group>"; };
+		C4C0CC6822AF520500311587 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
+		C4C0CC6A22AF528C00311587 /* HomeViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRouter.swift; sourceTree = "<group>"; };
+		C4C0CC6C22AF52C200311587 /* HomeViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInteractor.swift; sourceTree = "<group>"; };
+		C4C0CC6E22AF531E00311587 /* HomeViewEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewEntity.swift; sourceTree = "<group>"; };
 		C4DA686B22AEEC5D00AF8B64 /* WheatherDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheatherDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DA686E22AEEC5D00AF8B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4DA687022AEEC5D00AF8B64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C4DA687322AEEC5D00AF8B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4DA687522AEEC5F00AF8B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4DA687822AEEC5F00AF8B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4DA687A22AEEC5F00AF8B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +98,52 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C4C0CC4522AEEEF300311587 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C4C0CC5422AEF00600311587 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C4C0CC5422AEF00600311587 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C4C0CC7022AF5FD800311587 /* Models & ViewModels */,
+				C4C0CC6322AF515F00311587 /* SubViews */,
+				C4C0CC5522AEF01800311587 /* HomeViewController.swift */,
+				C4C0CC5722AEF04100311587 /* HomeProtocol.swift */,
+				C4C0CC6A22AF528C00311587 /* HomeViewRouter.swift */,
+				C4C0CC6C22AF52C200311587 /* HomeViewInteractor.swift */,
+				C4C0CC6822AF520500311587 /* HomeViewPresenter.swift */,
+				C4C0CC6E22AF531E00311587 /* HomeViewEntity.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C4C0CC5922AEF6D700311587 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C4C0CC5A22AEF6E600311587 /* WeatherResponseModel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C4C0CC6322AF515F00311587 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				C4C0CC6422AF517C00311587 /* WeatherListTableViewCell.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		C4C0CC7022AF5FD800311587 /* Models & ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Models & ViewModels";
+			sourceTree = "<group>";
+		};
 		C4DA686222AEEC5D00AF8B64 = {
 			isa = PBXGroup;
 			children = (
@@ -109,9 +167,9 @@
 		C4DA686D22AEEC5D00AF8B64 /* WheatherDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C4C0CC5922AEF6D700311587 /* Common */,
+				C4C0CC4522AEEEF300311587 /* Modules */,
 				C4DA686E22AEEC5D00AF8B64 /* AppDelegate.swift */,
-				C4DA687022AEEC5D00AF8B64 /* ViewController.swift */,
-				C4DA687222AEEC5D00AF8B64 /* Main.storyboard */,
 				C4DA687522AEEC5F00AF8B64 /* Assets.xcassets */,
 				C4DA687722AEEC5F00AF8B64 /* LaunchScreen.storyboard */,
 				C4DA687A22AEEC5F00AF8B64 /* Info.plist */,
@@ -214,7 +272,6 @@
 			files = (
 				C4DA687922AEEC5F00AF8B64 /* LaunchScreen.storyboard in Resources */,
 				C4DA687622AEEC5F00AF8B64 /* Assets.xcassets in Resources */,
-				C4DA687422AEEC5D00AF8B64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,8 +364,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4DA687122AEEC5D00AF8B64 /* ViewController.swift in Sources */,
+				C4C0CC5822AEF04100311587 /* HomeProtocol.swift in Sources */,
 				C4DA686F22AEEC5D00AF8B64 /* AppDelegate.swift in Sources */,
+				C4C0CC6D22AF52C200311587 /* HomeViewInteractor.swift in Sources */,
+				C4C0CC5B22AEF6E600311587 /* WeatherResponseModel.swift in Sources */,
+				C4C0CC6F22AF531E00311587 /* HomeViewEntity.swift in Sources */,
+				C4C0CC5622AEF01800311587 /* HomeViewController.swift in Sources */,
+				C4C0CC6922AF520500311587 /* HomeViewPresenter.swift in Sources */,
+				C4C0CC6522AF517D00311587 /* WeatherListTableViewCell.swift in Sources */,
+				C4C0CC6B22AF528C00311587 /* HomeViewRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,14 +395,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C4DA687222AEEC5D00AF8B64 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4DA687322AEEC5D00AF8B64 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C4DA687722AEEC5F00AF8B64 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
