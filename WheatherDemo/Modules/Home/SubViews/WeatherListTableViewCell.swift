@@ -17,6 +17,13 @@ class WeatherListTableViewCell: UITableViewCell {
         return view
     }()
     
+    private lazy var icon: UIImageView = {
+        let image = UIImageView()
+        image.contentMode = .scaleAspectFit
+        image.alpha = 0.5
+        return image
+    }()
+    
     private lazy var temperature: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 50, weight: .black)
@@ -44,6 +51,7 @@ class WeatherListTableViewCell: UITableViewCell {
         container.backgroundColor = MaterialColorGenerator.get_color(key: model.location)
         temperature.text = "\(model.temperature)"
         location.text = model.location
+        imageView?.downloaded(from: model.icon)
     }
     
     private func configureUI() {
@@ -52,6 +60,12 @@ class WeatherListTableViewCell: UITableViewCell {
         container.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(8.0)
             make.top.bottom.equalToSuperview().inset(12.0)
+        }
+        
+        container.addSubview(icon)
+        icon.snp.makeConstraints { make in
+            make.leading.equalToSuperview().inset(8.0)
+            make.top.equalToSuperview().inset(8.0)
         }
         
         container.addSubview(temperature)
@@ -64,5 +78,7 @@ class WeatherListTableViewCell: UITableViewCell {
         location.snp.makeConstraints { make in
             make.trailing.top.equalToSuperview().inset(8.0)
         }
+        
+        
     }
 }

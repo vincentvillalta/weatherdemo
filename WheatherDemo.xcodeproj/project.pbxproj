@@ -24,6 +24,7 @@
 		C4C0CC9022B13F9A00311587 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0CC8F22B13F9A00311587 /* DetailsViewController.swift */; };
 		C4C0CC9222B140EC00311587 /* DetailsViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0CC9122B140EC00311587 /* DetailsViewPresenter.swift */; };
 		C4C0CC9422B1424C00311587 /* DetailsViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0CC9322B1424C00311587 /* DetailsViewInteractor.swift */; };
+		C4C0CC9622B148FF00311587 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0CC9522B148FF00311587 /* UIImageView+Extensions.swift */; };
 		C4DA686F22AEEC5D00AF8B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DA686E22AEEC5D00AF8B64 /* AppDelegate.swift */; };
 		C4DA687622AEEC5F00AF8B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DA687522AEEC5F00AF8B64 /* Assets.xcassets */; };
 		C4DA687922AEEC5F00AF8B64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DA687722AEEC5F00AF8B64 /* LaunchScreen.storyboard */; };
@@ -63,6 +64,7 @@
 		C4C0CC8F22B13F9A00311587 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		C4C0CC9122B140EC00311587 /* DetailsViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewPresenter.swift; sourceTree = "<group>"; };
 		C4C0CC9322B1424C00311587 /* DetailsViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewInteractor.swift; sourceTree = "<group>"; };
+		C4C0CC9522B148FF00311587 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		C4DA686B22AEEC5D00AF8B64 /* WheatherDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheatherDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DA686E22AEEC5D00AF8B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4DA687522AEEC5F00AF8B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				C4C0CC8222B05E8200311587 /* WeatherViewModel.swift */,
 				C4C0CC8422B090FA00311587 /* Helper.swift */,
 				C4C0CC8622B0912D00311587 /* UIColor+Extensions.swift */,
+				C4C0CC9522B148FF00311587 /* UIImageView+Extensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				C4C0CC8E22B13F2500311587 /* DetailsViewRouter.swift in Sources */,
 				C4C0CC5622AEF01800311587 /* HomeViewController.swift in Sources */,
 				C4C0CC6922AF520500311587 /* HomeViewPresenter.swift in Sources */,
+				C4C0CC9622B148FF00311587 /* UIImageView+Extensions.swift in Sources */,
 				C4C0CC8A22B13AB400311587 /* DetailsProtocol.swift in Sources */,
 				C4C0CC6522AF517D00311587 /* WeatherListTableViewCell.swift in Sources */,
 				C4C0CC6B22AF528C00311587 /* HomeViewRouter.swift in Sources */,

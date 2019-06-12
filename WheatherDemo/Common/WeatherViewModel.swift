@@ -22,7 +22,7 @@ struct WeatherViewModel: Equatable {
     var weatherDetail: String
     var location: String
     var clouds: Int
-    
+    var icon: String
     init(_ model: WeatherData) {
         coordinates = CLLocation(latitude: model.coord?.lat ?? 0.0, longitude: model.coord?.lon ?? 0.0)
         visibility = model.visibility ?? 0
@@ -36,7 +36,7 @@ struct WeatherViewModel: Equatable {
         weatherDetail = model.weather?.first?.description ?? ""
         location = model.name ?? ""
         clouds = model.clouds?.all ?? 0
-
+        icon = "https://openweathermap.org/img/w/\(String(describing: model.weather?.first?.icon ?? "")).png"
     }
     
 }
