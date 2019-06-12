@@ -12,7 +12,7 @@ import CoreLocation
 class HomeViewEntity {
     func getWeatherDataWith(coordinates: CLLocation, headers: HTTPHeaders = [:]) -> Promise<WeatherData> {
         return Promise { seal in
-            AF.request("https://samples.openweathermap.org/data/2.5/weather?lat=\(coordinates.coordinate.latitude)&lon=\(coordinates.coordinate.longitude)&appid=b6907d289e10d714a6e88b30761fae22",
+            AF.request("https://openweathermap.org/data/2.5/weather?lat=\(coordinates.coordinate.latitude)&lon=\(coordinates.coordinate.longitude)&appid=b6907d289e10d714a6e88b30761fae22",
                        method: .get,
                        parameters: nil,
                        encoding: JSONEncoding.default,

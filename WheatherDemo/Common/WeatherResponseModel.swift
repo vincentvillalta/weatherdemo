@@ -7,7 +7,7 @@
 //
 
 import UIKit
-struct WeatherData: Decodable{
+struct WeatherData: Decodable {
     var coord: WeatherCoordinate?
     var weather: [Weather]?
     var base: String?
@@ -20,7 +20,6 @@ struct WeatherData: Decodable{
     var id: Int?
     var name: String?
     var cod: Int?
-    
 }
 
 struct WeatherCoordinate: Decodable{

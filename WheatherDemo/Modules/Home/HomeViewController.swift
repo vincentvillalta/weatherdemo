@@ -8,10 +8,10 @@
 
 import UIKit
 import SnapKit
-
+import CoreLocation
 class HomeViewController: UIViewController {
     
-    private var models: [Any] = []
+    private var models: [WeatherViewModel] = []
     private var presenter: HomeViewPresenter?
     
     private lazy var tableView: UITableView = {
@@ -32,11 +32,13 @@ class HomeViewController: UIViewController {
         tableView.snp.makeConstraints { make  in
             make.edges.equalToSuperview()
         }
+        presenter?.requestLocation()
+        presenter?.requestWeather()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        presenter?.requestWeather()
+        tableView.register(WeatherListTableViewCell.self, forCellReuseIdentifier: "WeatherCell")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,6 +53,12 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: HomeView {
+    func presentLocalWeatherData(data: WeatherData) {
+        let model = WeatherViewModel(data)
+        models.insert(model, at: 0)
+        tableView.reloadData()
+    }
+    
     func showLoading() {
         
     }
@@ -59,8 +67,10 @@ extension HomeViewController: HomeView {
         
     }
     
-    func presentWheaterData() {
-        
+    func presentWheaterData(data: WeatherData) {
+        let model = WeatherViewModel(data)
+        models.append(model)
+        tableView.reloadData()
     }
 }
 
@@ -70,9 +80,33 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tableViewCell = UITableViewCell()
-        return tableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherCell") as? WeatherListTableViewCell else {
+            return UITableViewCell()
+        }
+        cell.configure(with: models[indexPath.row])
+        return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120.0
+    }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.showWeatherDetails(detail: models[indexPath.row])
+    }
+}
+
+extension HomeViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            print("Found user's location: \(location)")
+            manager.stopUpdatingLocation()
+            presenter?.requestLocalWeather(location: location)
+            
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Failed to find user's location: \(error.localizedDescription)")
+    }
 }

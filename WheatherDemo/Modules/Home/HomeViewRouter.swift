@@ -15,8 +15,14 @@ class HomeViewRouter: HomeRouter {
         self.view = view
     }
     
-    func presentWheaterDetails() {
+    func presentWheaterDetails(from view: HomeView, for model: WeatherViewModel) {
+        let detailsVc = DetailsViewRouter.createDetailRouterModule(with: model)
         
+        guard let viewVC = view as? UIViewController else {
+            fatalError("Invalid View Protocol type")
+        }
+        
+        viewVC.navigationController?.pushViewController(detailsVc, animated: true)
     }
     
 }

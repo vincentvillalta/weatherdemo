@@ -17,22 +17,23 @@ class HomeViewInteractor: HomeInteractor {
         self.output = output
     }
     
-    func requestWheatherData() {
+    func requestWheatherData(by location: CLLocation) {
         firstly {
-            HomeViewEntity().getWeatherDataWith(coordinates: CLLocation(latitude: 12, longitude: 12))
+            HomeViewEntity().getWeatherDataWith(coordinates: location)
             }.done { response in
-                print(response)
                 self.output?.weatherData(data: response)
             }.catch { error in
-                print(error)
                 self.output?.weatherDataReponseError(error: error)
         }
     }
     
-    func requestUserLocationPermissions() {
-//        self.locationManager.requestWhenInUseAuthorization()
-//        self.locationManager.delegate = self
-//        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-//        self.locationManager.startUpdatingLocation()
+    func requestWeatherDataForUserLocation(location: CLLocation) {
+        firstly {
+            HomeViewEntity().getWeatherDataWith(coordinates: location)
+            }.done { response in
+                self.output?.weatherDataForUserLocation(data: response)
+            }.catch { error in
+                self.output?.weatherDataReponseError(error: error)
+        }
     }
 }
