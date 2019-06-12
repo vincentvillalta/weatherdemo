@@ -21,6 +21,7 @@ struct WeatherViewModel: Equatable {
     var weather: String
     var weatherDetail: String
     var location: String
+    var clouds: Int
     
     init(_ model: WeatherData) {
         coordinates = CLLocation(latitude: model.coord?.lat ?? 0.0, longitude: model.coord?.lon ?? 0.0)
@@ -34,6 +35,7 @@ struct WeatherViewModel: Equatable {
         weather = model.weather?.first?.main ?? ""
         weatherDetail = model.weather?.first?.description ?? ""
         location = model.name ?? ""
+        clouds = model.clouds?.all ?? 0
 
     }
     

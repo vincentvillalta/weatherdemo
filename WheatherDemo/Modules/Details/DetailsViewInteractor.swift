@@ -11,6 +11,4 @@ import UIKit
 class DetailsViewInteractor: DetailsInteractor {
     var presenter: DetailsPresenter?
     var model: WeatherViewModel?
-    
-
 }
